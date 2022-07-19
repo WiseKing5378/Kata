@@ -13,7 +13,7 @@
     src: url("../fonts/TTLakes-Bold.ttf");
 }
 body {
-    font-family: 'standart';
+    font-family: standart;
     background-color: #F8F8F8;
     margin: 0;
     padding: 0;
