@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'standart';
+    font-family: 'TT Lakes';
     src: url("../fonts/TTLakes-Regular.ttf");
 }
 @font-face {
@@ -13,7 +13,7 @@
     src: url("../fonts/TTLakes-Bold.ttf");
 }
 body {
-    font-family: standart;
+    font-family: TT Lakes;
     background-color: #F8F8F8;
     margin: 0;
     padding: 0;
