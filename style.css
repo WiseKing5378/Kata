@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'standart';
-    src: url("/fonts/TTLakes-Regular.ttf");
+    src: url("../fonts/TTLakes-Regular.ttf");
 }
 @font-face {
     font-family: 'medium';
-    src: url("/fonts/TTLakes-DemiBold.ttf");
+    src: url("../fonts/TTLakes-DemiBold.ttf");
     font-weight: bold;
 }
 /* Жирный */
 @font-face {
     font-family: 'Bold';
-    src: url("/fonts/TTLakes-Bold.ttf");
+    src: url("../fonts/TTLakes-Bold.ttf");
 }
 body {
     font-family: standart;
