@@ -1,19 +1,22 @@
 @font-face {
     font-family: 'TT Lakes';
     src: url("../fonts/TTLakes-Regular.ttf");
+    font-weight: 500;
 }
 @font-face {
-    font-family: 'medium';
+    font-family: 'TT Lakes';
     src: url("../fonts/TTLakes-DemiBold.ttf");
-    font-weight: bold;
+    font-weight: 600;
 }
-/* Жирный */
 @font-face {
-    font-family: 'Bold';
+    font-family: 'TT Lakes';
     src: url("../fonts/TTLakes-Bold.ttf");
+    font-weight: 900;
 }
+
 body {
-    font-family: TT Lakes;
+    font-family: 'TT Lakes',sans-serif;
+    font-weight: 500;
     background-color: #F8F8F8;
     margin: 0;
     padding: 0;
@@ -95,7 +98,7 @@ p {
 /*Навигация */
 /*Заголовок+ круглые кнопки*/
 .menu__main-title {
-    font-family: Bold;
+    font-weight: 900;
     font-size: 28px;
     line-height: 40px;
     margin: 0;
@@ -113,9 +116,9 @@ p {
     gap: 16px;
 }
 .menu__button-link {
+    font-weight: 600;
     display: flex;
     align-items: center;
-    font-family: medium;
     color: #1B1C21;
     font-size: 16px;
     
@@ -192,7 +195,7 @@ p {
     height: 176px;
 }
 .header-section__button {
-    font-family: medium;
+    font-weight: 600;
     font-size: 16px;
     color: #1B1C21;
     display: flex;
@@ -266,4 +269,3 @@ p {
         justify-content: center;
     }
 }
-
