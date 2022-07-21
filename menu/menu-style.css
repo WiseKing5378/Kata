@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("fonts/TTLakes-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("fonts/TTLakes-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url("fonts/TTLakes-Bold.ttf");
+    font-weight: 700;
+}
+
+a,button{
+    cursor: pointer;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.color-icon{
+    background: #FF3E79;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    Background-size: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+/* Верхние кнопки*/
+.left-menu{
+    font-family: 'TT Lakes',sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    width: 320px;
+    height: 100vh;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    gap:32px;
+    padding:18px 16px 32px 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 16px 0 52px 0 #0E185033,
+    -2px 0 4px 0 #454F7E05;
+}
+.left-menu__top{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+.left-menu__logo-sec{
+    display: flex;
+    align-items: center;  
+}
+.style-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: all linear.25s;
+}
+.style-button:hover{
+    opacity: 0.75;
+}
+.left-menu__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-menu__logo{
+    margin-left: 17px;
+    margin-right: 93px;
+    height: 52px;
+}
+
+/*Навигация*/
+.menu-nav__sec{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.menu-nav .menu-nav__sec{
+    padding: 0;
+}
+.menu-nav__link{
+    display: inline-block;
+    color: #1B1C21;
+    transition: all linear.5s
+}
+.menu-nav__link:hover::before,.menu-nav__link:active::before{
+    content: '';
+    position: relative;
+    left: -20px;
+    height: 32px;
+    border: 4px solid #41F6D7;
+    border-radius: 10px;
+    margin-right: -8px;
+}
+.menu-nav__link:hover, .menu-nav__link:active{
+    display: block;
+    color:#7E7E82 ; 
+    /*;*/
+    transform: scale(1.2) translateX(27px);
+}
+
+/*Низ меню*/
+
+.left-menu__button{
+    display: flex;
+    gap:16px;
+}
+
+.left-menu__contact:nth-child(3){
+    margin-top: -4px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.left-menu__lang{
+    margin-top: 8px;
+}
+.left-menu__lang-item{
+    padding-right: 7px;
+    color: #1B1C21;
+}
+.left-menu__lang-item:hover,.left-menu__lang-item:active{
+    color: #7E7E82;
+}
+
+
+@media (min-height:768px){
+    .menu-nav__sec{
+        gap: 32px;
+    }
+    .left-menu{
+        padding:18px 24px 32px 24px;
+    }
+    .left-menu__top{
+        gap: 50px;
+    }
+    .left-menu__lang{
+        margin-top: 40px;
+    }
+    .menu-nav__link:hover::before,.menu-nav__link:active::before{
+        content: '';
+        position: relative;
+        left: -28px;}
+    
+        .left-menu__logo{
+            margin-left: 17px;
+            margin-right: 78px;
+
+        }
+
+}
