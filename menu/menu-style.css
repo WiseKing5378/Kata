@@ -1,10 +1,11 @@
-.left-menu {
+body{
     font-family: 'TT Lakes',sans-serif;
     font-weight: 500;
     color: #1B1C21;
     font-size: 16px;
     line-height: 24px;
-
+}
+.left-menu {
     box-sizing: border-box;
     width: 320px;
     min-height: 670px;
@@ -30,9 +31,14 @@
 
 /* Верхние кнопки*/
 
-.left-menu__header-sec {
+.left-menu__header {
     display: flex;
     align-items: center;
+}
+/*Отступы лого*/
+.left-menu__header .left-menu__header-el:nth-child(2) {
+    margin-left: 17px;
+    margin-right: 93px;
 }
 .left-menu__header-el{
     display: flex;
@@ -44,23 +50,18 @@
     justify-content: center;
 }
 .left-menu__logo {
-    margin-left: 17px;
-    margin-right: 93px;
     height: 52px;
 }
 
 
 /*Навигация*/
 
-.menu-nav__sec {
-    margin: 0;
+.menu-nav__list {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.menu-nav .menu-nav__sec {
-    padding: 0;
-}
+
 .menu-nav__link {
     display: inline-block;
     color: #1B1C21;
@@ -78,13 +79,16 @@
 }
 .menu-nav__link:active,
 .menu-nav__link:hover {
-    display: block;
     color: #7E7E82;
-    transform: scale(1.2) translateX(27px);
 }
 
 
 /*Низ меню*/
+/*Отступы между списками внизу*/
+.left-menu__bottom ul:nth-child(2){
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
 
 .left-menu__button {
     display: flex;
@@ -95,23 +99,24 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 8px;
-    margin-top: 16px;
 }
-.left-menu__contact-item:nth-child(2){
+.left-menu__contact-item:last-child{
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
+}
+.left-menu__contact-link{
+    color: #1B1C21;
 }
 .left-menu__lang {
     display: flex;
     gap: 7px;
 }
-.left-menu__lang-item {
+.left-menu__lang-link {
     color: #1B1C21;
 }
-.left-menu__lang-item:active,
-.left-menu__lang-item:hover {
+.left-menu__lang-link:active,
+.left-menu__lang-link:hover {
     color: #7E7E82;
 }
 
@@ -125,8 +130,8 @@
 
 
     /*header*/
-
-    .left-menu__logo {
+    /*Отступы лого*/
+    .left-menu__header .left-menu__header-el:nth-child(2) {
         margin-left: 17px;
         margin-right: 78px;
     }
@@ -134,7 +139,7 @@
 
     /*Навигация*/
 
-    .menu-nav__sec {
+    .menu-nav__list {
         gap: 32px;
     }
     .menu-nav__link:active::before,
@@ -145,9 +150,9 @@
     }
 
 
-    /*Контакты*/
+    /*Отступы между списками внизу*/
 
-    .left-menu__contact{
+    .left-menu__bottom ul:nth-child(2){
         margin-bottom: 40px;
-    } 
+    }
 }
